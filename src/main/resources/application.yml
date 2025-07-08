@@ -1,0 +1,37 @@
+quarkus:
+  mongodb:
+    connection-string: "mongodb://localhost:27017"
+    database: "auth-db"
+
+  oidc:
+    auth-server-url: "http://localhost:8180/realms/auth-realm"
+    client-id: "auth-client"
+    credentials:
+      secret: "super-secret-key"
+
+  kafka:
+    bootstrap-servers: "localhost:9092"
+    consumer:
+      auto-offset-reset: "earliest"
+
+  redis:
+    hosts: "redis://localhost:6379"
+    timeout: "10s"
+    client-name: "auth-redis-client"
+
+  opentelemetry:
+    enabled: true
+    tracer:
+      exporter:
+        otlp:
+          endpoint: "http://localhost:4317"
+          protocol: "grpc"
+      resource-attributes: "service.name=auth-service"
+
+  http:
+    port: 8081
+
+  log:
+    level: "INFO"
+    console:
+      level: "INFO"
