@@ -27,10 +27,11 @@ public class UserResource {
 
     @GET
     @Path("/{username}")
-    public Uni<Response> getByUsername(User user){
-        return userService.register(user)
+    public Uni<Response> getByUsername(@PathParam("username") String username) { // ✅ Solo PathParam
+        return userService.findByUsername(username)
                 .onItem().ifNotNull().transform(u -> Response.ok(u).build())
                 .onItem().ifNull().continueWith(Response.status(Response.Status.NOT_FOUND)::build);
     }
+
 
 }
