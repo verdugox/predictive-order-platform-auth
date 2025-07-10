@@ -1,13 +1,22 @@
 quarkus:
+  oidc:
+    auth-server-url: "http://localhost:8080/realms/AuthService"  # URL del realm en Keycloak
+    client-id: "auth-service-client"  # ID del cliente configurado en Keycloak
+    credentials:
+      secret: "LHoI81AiwTsGdrFAn4chBZYbodNYuvjD"  # Client Secret generado por Keycloak
+    tls:
+      verification: none  # Solo en local, quitar en producción
+    application-type: service  # API protegida (no frontend)
+    authentication:
+      user-info-required: false  # Debe ser FALSE para tokens JWT (no consultas adicionales)
+      verify-access-token-audience: true  # Validación obligatoria de audience
+    token:
+      principal-claim: preferred_username  # Campo para el usuario en SecurityContext
+      role-claim-path: realm_access.roles  # ⚠️ Aquí es donde realmente se mapean los roles desde el token
+
   mongodb:
     connection-string: "mongodb://localhost:27017"
     database: "auth-db"
-
-  oidc:
-    auth-server-url: "http://localhost:8180/realms/auth-realm"
-    client-id: "auth-client"
-    credentials:
-      secret: "super-secret-key"
 
   kafka:
     bootstrap-servers: "localhost:9092"
@@ -20,7 +29,7 @@ quarkus:
     client-name: "auth-redis-client"
 
   opentelemetry:
-    enabled: true
+    enabled: false
     tracer:
       exporter:
         otlp:
@@ -35,3 +44,8 @@ quarkus:
     level: "INFO"
     console:
       level: "INFO"
+    category:
+      "io.quarkus.oidc":
+        level: DEBUG
+      "io.quarkus.security":
+        level: DEBUG
