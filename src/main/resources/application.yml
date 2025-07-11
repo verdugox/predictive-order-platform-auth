@@ -43,9 +43,24 @@ quarkus:
   log:
     level: "INFO"
     console:
+      enable: true
+      color: true
       level: "INFO"
     category:
       "io.quarkus.oidc":
         level: DEBUG
       "io.quarkus.security":
         level: DEBUG
+
+resilience4j.circuitbreaker:
+  instances:
+    userClient:
+      slidingWindowSize: 10
+      failureRateThreshold: 50
+      waitDurationInOpenState: 10s
+
+resilience4j.retry:
+  instances:
+    userClient:
+      maxAttempts: 3
+      waitDuration: 2s

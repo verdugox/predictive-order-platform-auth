@@ -1,6 +1,6 @@
 package com.webinarnttdata.auth.adapters.in.rest;
 
-import com.webinarnttdata.auth.application.UserService;
+import com.webinarnttdata.auth.application.services.UserService;
 import com.webinarnttdata.auth.domain.User;
 import io.quarkus.test.InjectMock;
 import io.quarkus.test.junit.QuarkusTest;
