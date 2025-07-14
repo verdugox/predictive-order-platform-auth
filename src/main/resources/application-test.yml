@@ -1,0 +1,20 @@
+quarkus:
+  oidc:
+    auth-server-url: http://localhost:8080/realms/AuthService
+    client-id: "auth-service-client"
+    credentials:
+      secret: u0ImLwTxsxsOE4J3Twl9NexiAkrtXnr2
+    tls:
+      verification: none
+    application-type: service
+    authentication:
+      user-info-required: false
+      verify-access-token-audience: true
+    token:
+      principal-claim: preferred_username
+      role-claim-path: realm_access.roles
+
+  mongodb:
+    connection-string: mongodb://localhost:27017
+    database: "auth-db"
+

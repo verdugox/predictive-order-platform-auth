@@ -1,41 +1,66 @@
+mp:
+  messaging:
+    outgoing:
+      auth-events-out:
+        connector: smallrye-kafka
+        topic: auth-events
+        value.serializer: io.quarkus.kafka.client.serialization.ObjectMapperSerializer
+        bootstrap.servers: ${QUARKUS_KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+
+    incoming:
+      auth-events-in:
+        connector: smallrye-kafka
+        topic: auth-events
+        value.deserializer: io.quarkus.kafka.client.serialization.ObjectMapperDeserializer
+        auto.offset.reset: earliest
+        bootstrap.servers: ${QUARKUS_KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+
+
+
 quarkus:
   oidc:
-    auth-server-url: "http://localhost:8080/realms/AuthService"  # URL del realm en Keycloak
-    client-id: "auth-service-client"  # ID del cliente configurado en Keycloak
+    auth-server-url: ${OIDC_URL:${vault:myapp.auth-server-url}}  # 1. ENV > 2. Vault > 3. (Error si ninguno)
+    client-id: "auth-service-client"
     credentials:
-      secret: "LHoI81AiwTsGdrFAn4chBZYbodNYuvjD"  # Client Secret generado por Keycloak
+      secret: ${OIDC_SECRET:${vault:myapp.client-secret}}  # ENV > Vault
     tls:
-      verification: none  # Solo en local, quitar en producción
-    application-type: service  # API protegida (no frontend)
+      verification: none
+    application-type: service
     authentication:
-      user-info-required: false  # Debe ser FALSE para tokens JWT (no consultas adicionales)
-      verify-access-token-audience: true  # Validación obligatoria de audience
+      user-info-required: false
     token:
-      principal-claim: preferred_username  # Campo para el usuario en SecurityContext
-      role-claim-path: realm_access.roles  # ⚠️ Aquí es donde realmente se mapean los roles desde el token
+      principal-claim: preferred_username
+      role-claim-path: realm_access.roles
+      verify-access-token-audience: true
 
   mongodb:
-    connection-string: "mongodb://localhost:27017"
+    connection-string: ${QUARKUS_MONGODB_CONNECTION_STRING:"mongodb://localhost:27017"}
     database: "auth-db"
 
-  kafka:
-    bootstrap-servers: "localhost:9092"
-    consumer:
-      auto-offset-reset: "earliest"
-
   redis:
-    hosts: "redis://localhost:6379"
-    timeout: "10s"
+    hosts: "redis://${REDIS_HOST:localhost}:${REDIS_PORT:6379}"
+    timeout: "100s"
     client-name: "auth-redis-client"
 
+
+  kafka:
+    bootstrap-servers: ${QUARKUS_KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+
   opentelemetry:
-    enabled: false
+    enabled: true
     tracer:
       exporter:
         otlp:
-          endpoint: "http://localhost:4317"
-          protocol: "grpc"
-      resource-attributes: "service.name=auth-service"
+          endpoint: ${OTEL_EXPORTER_OTLP_ENDPOINT:http://localhost:4317}
+          protocol: grpc
+      resource-attributes: service.name=auth-service
+
+  vault:
+    url: ${QUARKUS_VAULT_URL:http://localhost:8200}
+    authentication:
+      client-token: root
+    kv-secret-engine-mount-path: secret
+    kv-secret-engine-version: 2
 
   http:
     port: 8083
@@ -45,12 +70,22 @@ quarkus:
     console:
       enable: true
       color: true
-      level: "INFO"
+      level: "DEBUG"
+    file:
+      enable: true
+      path: "/app/logs/auth-service.log"
     category:
+      "com.webinarnttdata":
+        level: DEBUG
       "io.quarkus.oidc":
         level: DEBUG
       "io.quarkus.security":
         level: DEBUG
+      "org.apache.kafka":
+        level: DEBUG
+      "io.smallrye.reactive.messaging.kafka":
+        level: DEBUG
+
 
 resilience4j.circuitbreaker:
   instances:

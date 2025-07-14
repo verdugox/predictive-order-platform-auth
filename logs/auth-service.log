@@ -1,0 +1,1452 @@
+2025-07-14 23:12:43,808 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [io.qua.config] (main) Unrecognized configuration key "quarkus.opentelemetry.tracer.resource-attributes" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-07-14 23:12:43,808 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [io.qua.config] (main) Unrecognized configuration key "quarkus.oidc.token.role-claim-path" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-07-14 23:12:43,808 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [io.qua.config] (main) Unrecognized configuration key "quarkus.opentelemetry.tracer.exporter.otlp.protocol" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-07-14 23:12:43,808 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [io.qua.config] (main) Unrecognized configuration key "quarkus.opentelemetry.tracer.exporter.otlp.endpoint" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-07-14 23:12:43,808 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [io.qua.config] (main) Unrecognized configuration key "quarkus.opentelemetry.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-07-14 23:12:43,808 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [io.qua.config] (main) Unrecognized configuration key "quarkus.oidc.token.verify-access-token-audience" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-07-14 23:12:44,530 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [io.qua.ope.run.tra.int.ver.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.core.http.impl.HttpRequestHead@396fde68; Operation:GET.
+2025-07-14 23:12:44,573 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [io.qua.ope.run.tra.int.ver.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.core.http.impl.HttpResponseHead@4a5d6cae; Failure: null.
+2025-07-14 23:12:44,835 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [io.qua.oid.run.OidcProviderClientImpl] (vert.x-eventloop-thread-0) Get verification JWT Key Set at http://keycloak:8080/realms/AuthService/protocol/openid-connect/certs
+2025-07-14 23:12:44,839 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [io.qua.ope.run.tra.int.ver.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. SpanKind: RPC; Request: io.vertx.core.http.impl.HttpRequestHead@1ab7c5fa; Operation:GET.
+2025-07-14 23:12:44,848 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [io.qua.ope.run.tra.int.ver.OpenTelemetryVertxTracingFactory$VertxDelegator] (vert.x-eventloop-thread-0) VertxTracer delegate not set. Will not submit this trace. Response: io.vertx.core.http.impl.HttpResponseHead@550479f0; Failure: null.
+2025-07-14 23:12:44,852 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [io.qua.oid.run.OidcProviderClientImpl] (vert.x-eventloop-thread-0) Request succeeded: {"keys":[{"kid":"LkzQM3Fi4dVsl-GGlFlRTHr91O72sUqR0xsliTrLV2U","kty":"RSA","alg":"RSA-OAEP","use":"enc","n":"y2DYpDl346D6rJFrJ940VkGbDT3ViWfGn2QhVDMfQTHDlr2imnWuhbPepWML-HcLO7qxoO8zAieB39_w3YJQDdqAwklHOcE1XqLdDg7U3FSznNWAKNw5XM9NbFJmUEDB28uzKHChHshHH_xUjg1GlQNC_LpLJ036TMo_a-brKOTCN_qbEGQ43KytXGbvKvxUkv4S10rWbrs_7bSsJ0hm1_bpVlnXOv__2rpYcK2WL5FcG07xg8XR0OEHfXAZb3tGUQHYPUBaZPUJ6sSAIqGLGuUE8lNX-j-CidvN_j_Ha4uXdGWQd4eCPs2_pD2KzYrGLPoih2Slwo34Jh9qtrJhCw","e":"AQAB","x5c":["MIICpTCCAY0CBgGYCuQiTTANBgkqhkiG9w0BAQsFADAWMRQwEgYDVQQDDAtBdXRoU2VydmljZTAeFw0yNTA3MTQyMTQxMTlaFw0zNTA3MTQyMTQyNTlaMBYxFDASBgNVBAMMC0F1dGhTZXJ2aWNlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy2DYpDl346D6rJFrJ940VkGbDT3ViWfGn2QhVDMfQTHDlr2imnWuhbPepWML+HcLO7qxoO8zAieB39/w3YJQDdqAwklHOcE1XqLdDg7U3FSznNWAKNw5XM9NbFJmUEDB28uzKHChHshHH/xUjg1GlQNC/LpLJ036TMo/a+brKOTCN/qbEGQ43KytXGbvKvxUkv4S10rWbrs/7bSsJ0hm1/bpVlnXOv//2rpYcK2WL5FcG07xg8XR0OEHfXAZb3tGUQHYPUBaZPUJ6sSAIqGLGuUE8lNX+j+CidvN/j/Ha4uXdGWQd4eCPs2/pD2KzYrGLPoih2Slwo34Jh9qtrJhCwIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQA+Tfy7duFdgTPK/PYcKin/i6mTSLFJ/0GknO2FpwB0X15mba6s21cl9YKpIj3FDnQ5BcjV+CVz6dWIDJCEjpX3FT+8pR4Kkbe9YawJyGEIeHZ2yXj+L8V6jlNmV1NlGJ11er9iVpezNk7O1BIEGF6/rbvcQuCDii5daDozrvmYD/4W+OUTl2DfixnMalKlqSKMzgoBhO13K4DFu3xd9GZa1nxXtSVa1I5oNvojHiweFViygUqeBJwssmkQUzKgQPUnzIckYXEl6WgUo4CKKM8AFPQSkXCFhqBVt2D0QS46gamP16l3WMpNcIa5o+BF9psEvhz6zkhndzF7luTl3gzr"],"x5t":"RtCm9wC_-pseDgF6tcHAezIORS8","x5t#S256":"A3gqe6lsOj0L--7q_qzgAT7aW1B8pQZmXPT6OLzKoqA"},{"kid":"aGG9EQoWJfIKx5MGL4Fi2X1b-LiTSAji8EMnW-DuKSo","kty":"RSA","alg":"RS256","use":"sig","n":"klTl8mxZXQagKM1sHPyWhs2lpmoGcYv_fxkAELq1HIqrA1MaMjdz6HYrP5OZKmhILXxwWSrl2HTQZm1xdrjaSmjCU4Hi7a6P2g6hIEdJqfOGrp4UzF_6CJ47DornWpNGw8uq_vRecarqMrMoRArPx8rYXzhzYnB18iEq3qkFRJz7VO1qc829xM19tv2PZnSxzJrdfmyP6qTD-cPs5wOJAQqVkgjFqWkY1NxkwKg2xZ1eYfRpA5OpfRedTQeH67TfGZrlFSBBIvQdfsjPbSCpEovWLtZH383GVdbOrLKXmeNp509sEOq0Dhs6PwkHiaCfg8Oxozik2DHCouvvus3RLQ","e":"AQAB","x5c":["MIICpTCCAY0CBgGYCuQenTANBgkqhkiG9w0BAQsFADAWMRQwEgYDVQQDDAtBdXRoU2VydmljZTAeFw0yNTA3MTQyMTQxMThaFw0zNTA3MTQyMTQyNThaMBYxFDASBgNVBAMMC0F1dGhTZXJ2aWNlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAklTl8mxZXQagKM1sHPyWhs2lpmoGcYv/fxkAELq1HIqrA1MaMjdz6HYrP5OZKmhILXxwWSrl2HTQZm1xdrjaSmjCU4Hi7a6P2g6hIEdJqfOGrp4UzF/6CJ47DornWpNGw8uq/vRecarqMrMoRArPx8rYXzhzYnB18iEq3qkFRJz7VO1qc829xM19tv2PZnSxzJrdfmyP6qTD+cPs5wOJAQqVkgjFqWkY1NxkwKg2xZ1eYfRpA5OpfRedTQeH67TfGZrlFSBBIvQdfsjPbSCpEovWLtZH383GVdbOrLKXmeNp509sEOq0Dhs6PwkHiaCfg8Oxozik2DHCouvvus3RLQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQBxxVAKhPtH5ghNoT4Kh2aqZgUdq4kXdp+2w9EqbgRCQzAmgNvNDv5Vcn0XIbjDkgoqRj4wAABlsi92m5DyzsgUSth7KUP+PJd91gxoy7md+2penemROt16OYQXEMYpbqHnEPHWT4B4NAGjEnINuvOJ83XuDjpVBPDtxBQqYpGkiXIDUEVQnJXOh6e5hdGOFJG3w4zP2brW2Yc0aKTFkh/30qrkBgekheelcvn2zsB3SqOMQl3z5G5I2KiEpzbrSc6d43knKO2Aeo0cxXZ9X5+PwB2FrPdOozaI7oRqR8lp/EXtMe/zjFlmXyq1iJAEpcJPOPWmfhf4/QIdBiWnm8es"],"x5t":"yHSZFqeFCoGR2kqIQtEVwNypxXY","x5t#S256":"yVTanBU9lv9AsaVToDPOt4aFF5rS_Mq9MKODESKWwKs"}]}
+2025-07-14 23:12:45,067 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [io.sma.rea.mes.kafka] (main) SRMSG18216: No `group.id` set in the configuration, generate a random id: c16babc3-7e1b-4cd9-badc-22d3b71f877b
+2025-07-14 23:12:45,071 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] INFO  [io.sma.rea.mes.kafka] (main) SRMSG18229: Configured topics for channel 'auth-events-in': [auth-events]
+2025-07-14 23:12:45,083 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] INFO  [io.sma.rea.mes.kafka] (main) SRMSG18213: Setting bootstrap.servers to localhost:9092
+2025-07-14 23:12:45,084 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] INFO  [io.sma.rea.mes.kafka] (main) SRMSG18214: Key deserializer omitted, using String as default
+2025-07-14 23:12:45,085 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [io.sma.rea.mes.kafka] (main) SRMSG18234: Auto-commit disabled for channel auth-events-in
+2025-07-14 23:12:45,124 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] INFO  [org.apa.kaf.com.con.AbstractConfig] (smallrye-kafka-consumer-thread-0) ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = kafka-consumer-auth-events-in
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = c16babc3-7e1b-4cd9-badc-22d3b71f877b
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class io.smallrye.reactive.messaging.kafka.fault.DeserializerWrapper
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.rebootstrap.trigger.ms = 300000
+	metadata.recovery.strategy = rebootstrap
+	metric.reporters = [org.apache.kafka.common.metrics.JmxReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 10000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.smallrye.reactive.messaging.kafka.fault.DeserializerWrapper
+
+2025-07-14 23:12:45,367 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] INFO  [org.apa.kaf.com.con.AbstractConfig] (smallrye-kafka-consumer-thread-0) These configurations '["bootstrap.servers", "value.deserializer", "auto.offset.reset"]' were supplied but are not used yet.
+2025-07-14 23:12:45,376 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [io.sma.rea.mes.kafka] (main) SRMSG18240: 'throttled' commit strategy used for channel 'auth-events-in'
+2025-07-14 23:12:45,379 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [io.sma.rea.mes.kafka] (main) SRMSG18232: Will commit for group 'c16babc3-7e1b-4cd9-badc-22d3b71f877b' every 5000 milliseconds.
+2025-07-14 23:12:45,381 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [io.sma.rea.mes.kafka] (main) SRMSG18236: Will mark throttled commit strategy for group 'c16babc3-7e1b-4cd9-badc-22d3b71f877b' as unhealthy if records go more than 60000 milliseconds without being processed.
+2025-07-14 23:12:45,407 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] INFO  [io.sma.rea.mes.kafka] (main) SRMSG18213: Setting bootstrap.servers to localhost:9092
+2025-07-14 23:12:45,408 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [io.sma.rea.mes.kafka] (main) SRMSG18248: Key serializer omitted, using String as default
+2025-07-14 23:12:45,420 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] INFO  [org.apa.kaf.com.con.AbstractConfig] (smallrye-kafka-producer-thread-0) ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = kafka-producer-auth-events-out
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class io.smallrye.reactive.messaging.kafka.fault.SerializerWrapper
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.rebootstrap.trigger.ms = 300000
+	metadata.recovery.strategy = rebootstrap
+	metric.reporters = [org.apache.kafka.common.metrics.JmxReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 10000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.smallrye.reactive.messaging.kafka.fault.SerializerWrapper
+
+2025-07-14 23:12:45,448 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] INFO  [org.apa.kaf.com.con.AbstractConfig] (smallrye-kafka-producer-thread-0) These configurations '["bootstrap.servers", "value.serializer"]' were supplied but are not used yet.
+2025-07-14 23:12:45,450 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] INFO  [io.sma.rea.mes.kafka] (smallrye-kafka-producer-thread-0) SRMSG18258: Kafka producer kafka-producer-auth-events-out, connected to Kafka brokers 'localhost:9092', is configured to write records to 'auth-events'
+2025-07-14 23:12:45,498 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] INFO  [io.sma.rea.mes.kafka] (smallrye-kafka-consumer-thread-0) SRMSG18257: Kafka consumer kafka-consumer-auth-events-in, connected to Kafka brokers 'localhost:9092', belongs to the 'c16babc3-7e1b-4cd9-badc-22d3b71f877b' consumer group and is configured to poll records from [auth-events]
+2025-07-14 23:12:45,543 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] INFO  [io.quarkus] (main) auth-service 1.0.0-SNAPSHOT on JVM (powered by Quarkus 3.24.2) started in 3.201s. Listening on: http://0.0.0.0:8083
+2025-07-14 23:12:45,544 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] INFO  [io.quarkus] (main) Profile prod activated. 
+2025-07-14 23:12:45,545 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] INFO  [io.quarkus] (main) Installed features: [agroal, cdi, config-yaml, hibernate-orm, hibernate-orm-panache, kafka-client, messaging, messaging-kafka, mongodb-client, mongodb-panache, narayana-jta, oidc, opentelemetry, redis-client, rest, rest-jackson, security, smallrye-context-propagation, smallrye-jwt, vault, vertx]
+2025-07-14 23:12:45,672 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:12:45,676 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:12:45,675 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:282)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:232)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:290)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:264)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.coordinatorUnknownAndUnreadySync(ConsumerCoordinator.java:451)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:483)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.updateAssignmentMetadataIfNeeded(ClassicKafkaConsumer.java:677)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:641)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:622)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:895)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaConsumer.lambda$poll$4(ReactiveKafkaConsumer.java:199)
+	at io.smallrye.context.impl.wrappers.SlowContextualFunction.apply(SlowContextualFunction.java:21)
+	at io.smallrye.mutiny.operators.uni.UniOnItemTransform$UniOnItemTransformProcessor.onItem(UniOnItemTransform.java:36)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onItem(UniOperatorProcessor.java:47)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.forwardTo(UniMemoizeOp.java:123)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.subscribe(UniMemoizeOp.java:67)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:35)
+	at io.smallrye.mutiny.operators.uni.UniRunSubscribeOn.lambda$subscribe$0(UniRunSubscribeOn.java:27)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:12:45,678 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:12:45,689 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:12:45,689 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:12:45,745 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:12:45,747 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:12:45,749 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:12:45,812 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:282)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:253)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:244)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.awaitMetadataUpdate(ConsumerNetworkClient.java:166)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:303)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:264)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.coordinatorUnknownAndUnreadySync(ConsumerCoordinator.java:451)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:483)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.updateAssignmentMetadataIfNeeded(ClassicKafkaConsumer.java:677)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:641)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:622)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:895)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaConsumer.lambda$poll$4(ReactiveKafkaConsumer.java:199)
+	at io.smallrye.context.impl.wrappers.SlowContextualFunction.apply(SlowContextualFunction.java:21)
+	at io.smallrye.mutiny.operators.uni.UniOnItemTransform$UniOnItemTransformProcessor.onItem(UniOnItemTransform.java:36)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onItem(UniOperatorProcessor.java:47)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.forwardTo(UniMemoizeOp.java:123)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.subscribe(UniMemoizeOp.java:67)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:35)
+	at io.smallrye.mutiny.operators.uni.UniRunSubscribeOn.lambda$subscribe$0(UniRunSubscribeOn.java:27)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:12:45,817 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:12:45,819 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:12:45,892 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:12:45,894 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:12:45,895 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:12:45,925 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:282)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:253)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:244)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.awaitMetadataUpdate(ConsumerNetworkClient.java:166)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:303)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:264)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.coordinatorUnknownAndUnreadySync(ConsumerCoordinator.java:451)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:483)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.updateAssignmentMetadataIfNeeded(ClassicKafkaConsumer.java:677)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:641)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:622)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:895)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaConsumer.lambda$poll$4(ReactiveKafkaConsumer.java:199)
+	at io.smallrye.context.impl.wrappers.SlowContextualFunction.apply(SlowContextualFunction.java:21)
+	at io.smallrye.mutiny.operators.uni.UniOnItemTransform$UniOnItemTransformProcessor.onItem(UniOnItemTransform.java:36)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onItem(UniOperatorProcessor.java:47)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.forwardTo(UniMemoizeOp.java:123)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.subscribe(UniMemoizeOp.java:67)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:35)
+	at io.smallrye.mutiny.operators.uni.UniRunSubscribeOn.lambda$subscribe$0(UniRunSubscribeOn.java:27)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:12:45,927 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:12:45,929 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:12:46,156 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:12:46,157 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:12:46,159 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:12:46,256 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:282)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:253)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:244)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.awaitMetadataUpdate(ConsumerNetworkClient.java:166)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:303)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:264)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.coordinatorUnknownAndUnreadySync(ConsumerCoordinator.java:451)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:483)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.updateAssignmentMetadataIfNeeded(ClassicKafkaConsumer.java:677)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:641)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:622)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:895)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaConsumer.lambda$poll$4(ReactiveKafkaConsumer.java:199)
+	at io.smallrye.context.impl.wrappers.SlowContextualFunction.apply(SlowContextualFunction.java:21)
+	at io.smallrye.mutiny.operators.uni.UniOnItemTransform$UniOnItemTransformProcessor.onItem(UniOnItemTransform.java:36)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onItem(UniOperatorProcessor.java:47)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.forwardTo(UniMemoizeOp.java:123)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.subscribe(UniMemoizeOp.java:67)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:35)
+	at io.smallrye.mutiny.operators.uni.UniRunSubscribeOn.lambda$subscribe$0(UniRunSubscribeOn.java:27)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:12:46,257 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:12:46,258 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:12:46,528 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:12:46,530 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:12:46,532 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:12:46,619 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:282)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:253)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:244)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.awaitMetadataUpdate(ConsumerNetworkClient.java:166)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:303)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:264)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.coordinatorUnknownAndUnreadySync(ConsumerCoordinator.java:451)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:483)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.updateAssignmentMetadataIfNeeded(ClassicKafkaConsumer.java:677)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:641)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:622)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:895)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaConsumer.lambda$poll$4(ReactiveKafkaConsumer.java:199)
+	at io.smallrye.context.impl.wrappers.SlowContextualFunction.apply(SlowContextualFunction.java:21)
+	at io.smallrye.mutiny.operators.uni.UniOnItemTransform$UniOnItemTransformProcessor.onItem(UniOnItemTransform.java:36)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onItem(UniOperatorProcessor.java:47)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.forwardTo(UniMemoizeOp.java:123)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.subscribe(UniMemoizeOp.java:67)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:35)
+	at io.smallrye.mutiny.operators.uni.UniRunSubscribeOn.lambda$subscribe$0(UniRunSubscribeOn.java:27)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:12:46,622 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:12:46,624 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:12:47,343 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:12:47,344 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:12:47,346 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:12:47,418 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:282)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:232)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:290)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:264)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.coordinatorUnknownAndUnreadySync(ConsumerCoordinator.java:451)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:483)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.updateAssignmentMetadataIfNeeded(ClassicKafkaConsumer.java:677)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:641)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:622)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:895)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaConsumer.lambda$poll$4(ReactiveKafkaConsumer.java:199)
+	at io.smallrye.context.impl.wrappers.SlowContextualFunction.apply(SlowContextualFunction.java:21)
+	at io.smallrye.mutiny.operators.uni.UniOnItemTransform$UniOnItemTransformProcessor.onItem(UniOnItemTransform.java:36)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onItem(UniOperatorProcessor.java:47)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.forwardTo(UniMemoizeOp.java:123)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.subscribe(UniMemoizeOp.java:67)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:35)
+	at io.smallrye.mutiny.operators.uni.UniRunSubscribeOn.lambda$subscribe$0(UniRunSubscribeOn.java:27)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:12:47,419 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:12:47,420 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:12:48,744 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:12:48,745 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:12:48,747 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:12:49,431 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:282)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:253)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:244)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.awaitMetadataUpdate(ConsumerNetworkClient.java:166)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:303)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:264)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.coordinatorUnknownAndUnreadySync(ConsumerCoordinator.java:451)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:483)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.updateAssignmentMetadataIfNeeded(ClassicKafkaConsumer.java:677)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:641)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:622)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:895)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaConsumer.lambda$poll$4(ReactiveKafkaConsumer.java:199)
+	at io.smallrye.context.impl.wrappers.SlowContextualFunction.apply(SlowContextualFunction.java:21)
+	at io.smallrye.mutiny.operators.uni.UniOnItemTransform$UniOnItemTransformProcessor.onItem(UniOnItemTransform.java:36)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onItem(UniOperatorProcessor.java:47)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.forwardTo(UniMemoizeOp.java:123)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.subscribe(UniMemoizeOp.java:67)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:35)
+	at io.smallrye.mutiny.operators.uni.UniRunSubscribeOn.lambda$subscribe$0(UniRunSubscribeOn.java:27)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:12:49,432 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:12:49,433 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:12:52,244 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:12:52,245 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:12:52,247 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:12:53,394 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:282)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:253)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:244)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.awaitMetadataUpdate(ConsumerNetworkClient.java:166)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:303)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:264)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.coordinatorUnknownAndUnreadySync(ConsumerCoordinator.java:451)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:483)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.updateAssignmentMetadataIfNeeded(ClassicKafkaConsumer.java:677)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:641)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:622)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:895)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaConsumer.lambda$poll$4(ReactiveKafkaConsumer.java:199)
+	at io.smallrye.context.impl.wrappers.SlowContextualFunction.apply(SlowContextualFunction.java:21)
+	at io.smallrye.mutiny.operators.uni.UniOnItemTransform$UniOnItemTransformProcessor.onItem(UniOnItemTransform.java:36)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onItem(UniOperatorProcessor.java:47)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.forwardTo(UniMemoizeOp.java:123)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.subscribe(UniMemoizeOp.java:67)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:35)
+	at io.smallrye.mutiny.operators.uni.UniRunSubscribeOn.lambda$subscribe$0(UniRunSubscribeOn.java:27)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:12:53,395 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:12:53,396 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:12:58,297 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:12:58,298 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:12:58,299 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:12:59,904 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:282)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:253)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:244)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.awaitMetadataUpdate(ConsumerNetworkClient.java:166)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:303)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:264)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.coordinatorUnknownAndUnreadySync(ConsumerCoordinator.java:451)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:483)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.updateAssignmentMetadataIfNeeded(ClassicKafkaConsumer.java:677)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:641)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:622)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:895)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaConsumer.lambda$poll$4(ReactiveKafkaConsumer.java:199)
+	at io.smallrye.context.impl.wrappers.SlowContextualFunction.apply(SlowContextualFunction.java:21)
+	at io.smallrye.mutiny.operators.uni.UniOnItemTransform$UniOnItemTransformProcessor.onItem(UniOnItemTransform.java:36)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onItem(UniOperatorProcessor.java:47)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.forwardTo(UniMemoizeOp.java:123)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.subscribe(UniMemoizeOp.java:67)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:35)
+	at io.smallrye.mutiny.operators.uni.UniRunSubscribeOn.lambda$subscribe$0(UniRunSubscribeOn.java:27)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:12:59,906 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:12:59,909 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:13:08,327 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:13:08,328 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:13:08,329 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:13:09,716 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:282)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:253)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:244)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.awaitMetadataUpdate(ConsumerNetworkClient.java:166)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:303)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:264)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.coordinatorUnknownAndUnreadySync(ConsumerCoordinator.java:451)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:483)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.updateAssignmentMetadataIfNeeded(ClassicKafkaConsumer.java:677)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:641)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:622)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:895)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaConsumer.lambda$poll$4(ReactiveKafkaConsumer.java:199)
+	at io.smallrye.context.impl.wrappers.SlowContextualFunction.apply(SlowContextualFunction.java:21)
+	at io.smallrye.mutiny.operators.uni.UniOnItemTransform$UniOnItemTransformProcessor.onItem(UniOnItemTransform.java:36)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onItem(UniOperatorProcessor.java:47)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.forwardTo(UniMemoizeOp.java:123)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.subscribe(UniMemoizeOp.java:67)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:35)
+	at io.smallrye.mutiny.operators.uni.UniRunSubscribeOn.lambda$subscribe$0(UniRunSubscribeOn.java:27)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:13:09,717 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:13:09,718 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:13:18,345 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:13:18,346 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:13:18,348 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:13:19,748 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:282)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:253)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:244)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.awaitMetadataUpdate(ConsumerNetworkClient.java:166)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:303)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:264)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.coordinatorUnknownAndUnreadySync(ConsumerCoordinator.java:451)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:483)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.updateAssignmentMetadataIfNeeded(ClassicKafkaConsumer.java:677)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:641)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:622)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:895)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaConsumer.lambda$poll$4(ReactiveKafkaConsumer.java:199)
+	at io.smallrye.context.impl.wrappers.SlowContextualFunction.apply(SlowContextualFunction.java:21)
+	at io.smallrye.mutiny.operators.uni.UniOnItemTransform$UniOnItemTransformProcessor.onItem(UniOnItemTransform.java:36)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onItem(UniOperatorProcessor.java:47)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.forwardTo(UniMemoizeOp.java:123)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.subscribe(UniMemoizeOp.java:67)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:35)
+	at io.smallrye.mutiny.operators.uni.UniRunSubscribeOn.lambda$subscribe$0(UniRunSubscribeOn.java:27)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:13:19,750 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:13:19,753 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:13:28,363 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:13:28,364 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:13:28,365 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:13:29,755 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:282)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:253)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:244)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.awaitMetadataUpdate(ConsumerNetworkClient.java:166)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:303)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:264)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.coordinatorUnknownAndUnreadySync(ConsumerCoordinator.java:451)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:483)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.updateAssignmentMetadataIfNeeded(ClassicKafkaConsumer.java:677)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:641)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:622)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:895)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaConsumer.lambda$poll$4(ReactiveKafkaConsumer.java:199)
+	at io.smallrye.context.impl.wrappers.SlowContextualFunction.apply(SlowContextualFunction.java:21)
+	at io.smallrye.mutiny.operators.uni.UniOnItemTransform$UniOnItemTransformProcessor.onItem(UniOnItemTransform.java:36)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onItem(UniOperatorProcessor.java:47)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.forwardTo(UniMemoizeOp.java:123)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.subscribe(UniMemoizeOp.java:67)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:35)
+	at io.smallrye.mutiny.operators.uni.UniRunSubscribeOn.lambda$subscribe$0(UniRunSubscribeOn.java:27)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:13:29,757 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:13:29,759 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:13:38,366 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:13:38,368 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:13:38,369 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:13:38,544 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:282)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:253)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:244)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.awaitMetadataUpdate(ConsumerNetworkClient.java:166)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:303)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:264)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.coordinatorUnknownAndUnreadySync(ConsumerCoordinator.java:451)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:483)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.updateAssignmentMetadataIfNeeded(ClassicKafkaConsumer.java:677)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:641)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:622)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:895)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaConsumer.lambda$poll$4(ReactiveKafkaConsumer.java:199)
+	at io.smallrye.context.impl.wrappers.SlowContextualFunction.apply(SlowContextualFunction.java:21)
+	at io.smallrye.mutiny.operators.uni.UniOnItemTransform$UniOnItemTransformProcessor.onItem(UniOnItemTransform.java:36)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onItem(UniOperatorProcessor.java:47)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.forwardTo(UniMemoizeOp.java:123)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.subscribe(UniMemoizeOp.java:67)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:35)
+	at io.smallrye.mutiny.operators.uni.UniRunSubscribeOn.lambda$subscribe$0(UniRunSubscribeOn.java:27)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:13:38,545 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:13:38,547 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:13:47,612 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:282)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:253)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:244)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.awaitMetadataUpdate(ConsumerNetworkClient.java:166)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:303)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:264)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.coordinatorUnknownAndUnreadySync(ConsumerCoordinator.java:451)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:483)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.updateAssignmentMetadataIfNeeded(ClassicKafkaConsumer.java:677)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:641)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:622)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:895)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaConsumer.lambda$poll$4(ReactiveKafkaConsumer.java:199)
+	at io.smallrye.context.impl.wrappers.SlowContextualFunction.apply(SlowContextualFunction.java:21)
+	at io.smallrye.mutiny.operators.uni.UniOnItemTransform$UniOnItemTransformProcessor.onItem(UniOnItemTransform.java:36)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onItem(UniOperatorProcessor.java:47)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.forwardTo(UniMemoizeOp.java:123)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.subscribe(UniMemoizeOp.java:67)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:35)
+	at io.smallrye.mutiny.operators.uni.UniRunSubscribeOn.lambda$subscribe$0(UniRunSubscribeOn.java:27)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:13:47,614 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:13:47,620 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:13:48,416 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:13:48,417 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:13:48,417 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:13:56,608 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:13:56,609 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:13:56,610 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:13:56,640 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:282)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:253)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:244)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.awaitMetadataUpdate(ConsumerNetworkClient.java:166)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:303)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:264)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.coordinatorUnknownAndUnreadySync(ConsumerCoordinator.java:451)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:483)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.updateAssignmentMetadataIfNeeded(ClassicKafkaConsumer.java:677)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:641)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:622)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:895)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaConsumer.lambda$poll$4(ReactiveKafkaConsumer.java:199)
+	at io.smallrye.context.impl.wrappers.SlowContextualFunction.apply(SlowContextualFunction.java:21)
+	at io.smallrye.mutiny.operators.uni.UniOnItemTransform$UniOnItemTransformProcessor.onItem(UniOnItemTransform.java:36)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onItem(UniOperatorProcessor.java:47)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.forwardTo(UniMemoizeOp.java:123)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.subscribe(UniMemoizeOp.java:67)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:35)
+	at io.smallrye.mutiny.operators.uni.UniRunSubscribeOn.lambda$subscribe$0(UniRunSubscribeOn.java:27)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:13:56,642 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:13:56,643 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:14:06,620 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:14:06,621 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:14:06,623 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:14:06,781 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:282)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:253)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:244)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.awaitMetadataUpdate(ConsumerNetworkClient.java:166)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:303)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:264)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.coordinatorUnknownAndUnreadySync(ConsumerCoordinator.java:451)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:483)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.updateAssignmentMetadataIfNeeded(ClassicKafkaConsumer.java:677)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:641)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:622)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:895)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaConsumer.lambda$poll$4(ReactiveKafkaConsumer.java:199)
+	at io.smallrye.context.impl.wrappers.SlowContextualFunction.apply(SlowContextualFunction.java:21)
+	at io.smallrye.mutiny.operators.uni.UniOnItemTransform$UniOnItemTransformProcessor.onItem(UniOnItemTransform.java:36)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onItem(UniOperatorProcessor.java:47)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.forwardTo(UniMemoizeOp.java:123)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.subscribe(UniMemoizeOp.java:67)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:35)
+	at io.smallrye.mutiny.operators.uni.UniRunSubscribeOn.lambda$subscribe$0(UniRunSubscribeOn.java:27)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:14:06,782 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:14:06,784 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:14:14,990 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:14:14,992 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:14:14,993 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:14:15,785 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:282)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:253)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:244)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.awaitMetadataUpdate(ConsumerNetworkClient.java:166)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:303)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:264)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.coordinatorUnknownAndUnreadySync(ConsumerCoordinator.java:451)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:483)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.updateAssignmentMetadataIfNeeded(ClassicKafkaConsumer.java:677)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:641)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:622)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:895)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaConsumer.lambda$poll$4(ReactiveKafkaConsumer.java:199)
+	at io.smallrye.context.impl.wrappers.SlowContextualFunction.apply(SlowContextualFunction.java:21)
+	at io.smallrye.mutiny.operators.uni.UniOnItemTransform$UniOnItemTransformProcessor.onItem(UniOnItemTransform.java:36)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onItem(UniOperatorProcessor.java:47)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.forwardTo(UniMemoizeOp.java:123)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.subscribe(UniMemoizeOp.java:67)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:35)
+	at io.smallrye.mutiny.operators.uni.UniRunSubscribeOn.lambda$subscribe$0(UniRunSubscribeOn.java:27)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:14:15,786 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:14:15,788 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:14:25,035 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:14:25,037 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:14:25,038 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:14:25,840 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:282)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:253)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:244)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.awaitMetadataUpdate(ConsumerNetworkClient.java:166)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:303)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:264)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.coordinatorUnknownAndUnreadySync(ConsumerCoordinator.java:451)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:483)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.updateAssignmentMetadataIfNeeded(ClassicKafkaConsumer.java:677)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:641)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:622)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:895)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaConsumer.lambda$poll$4(ReactiveKafkaConsumer.java:199)
+	at io.smallrye.context.impl.wrappers.SlowContextualFunction.apply(SlowContextualFunction.java:21)
+	at io.smallrye.mutiny.operators.uni.UniOnItemTransform$UniOnItemTransformProcessor.onItem(UniOnItemTransform.java:36)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onItem(UniOperatorProcessor.java:47)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.forwardTo(UniMemoizeOp.java:123)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.subscribe(UniMemoizeOp.java:67)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:35)
+	at io.smallrye.mutiny.operators.uni.UniRunSubscribeOn.lambda$subscribe$0(UniRunSubscribeOn.java:27)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:14:25,842 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:14:25,843 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:14:35,043 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:14:35,044 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:14:35,044 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:14:35,941 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:282)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:253)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:244)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.awaitMetadataUpdate(ConsumerNetworkClient.java:166)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:303)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:264)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.coordinatorUnknownAndUnreadySync(ConsumerCoordinator.java:451)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:483)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.updateAssignmentMetadataIfNeeded(ClassicKafkaConsumer.java:677)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:641)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:622)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:895)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaConsumer.lambda$poll$4(ReactiveKafkaConsumer.java:199)
+	at io.smallrye.context.impl.wrappers.SlowContextualFunction.apply(SlowContextualFunction.java:21)
+	at io.smallrye.mutiny.operators.uni.UniOnItemTransform$UniOnItemTransformProcessor.onItem(UniOnItemTransform.java:36)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onItem(UniOperatorProcessor.java:47)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.forwardTo(UniMemoizeOp.java:123)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.subscribe(UniMemoizeOp.java:67)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:35)
+	at io.smallrye.mutiny.operators.uni.UniRunSubscribeOn.lambda$subscribe$0(UniRunSubscribeOn.java:27)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:14:35,949 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:14:35,954 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:14:43,087 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:14:43,088 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:14:43,089 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:14:45,985 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:282)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:253)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:244)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.awaitMetadataUpdate(ConsumerNetworkClient.java:166)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:303)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:264)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.coordinatorUnknownAndUnreadySync(ConsumerCoordinator.java:451)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:483)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.updateAssignmentMetadataIfNeeded(ClassicKafkaConsumer.java:677)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:641)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:622)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:895)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaConsumer.lambda$poll$4(ReactiveKafkaConsumer.java:199)
+	at io.smallrye.context.impl.wrappers.SlowContextualFunction.apply(SlowContextualFunction.java:21)
+	at io.smallrye.mutiny.operators.uni.UniOnItemTransform$UniOnItemTransformProcessor.onItem(UniOnItemTransform.java:36)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onItem(UniOperatorProcessor.java:47)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.forwardTo(UniMemoizeOp.java:123)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.subscribe(UniMemoizeOp.java:67)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:35)
+	at io.smallrye.mutiny.operators.uni.UniRunSubscribeOn.lambda$subscribe$0(UniRunSubscribeOn.java:27)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:14:45,986 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:14:45,987 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:14:53,095 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:14:53,096 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:14:53,098 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:14:54,567 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:282)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:232)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:290)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:264)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.coordinatorUnknownAndUnreadySync(ConsumerCoordinator.java:451)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:483)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.updateAssignmentMetadataIfNeeded(ClassicKafkaConsumer.java:677)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:641)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:622)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:895)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaConsumer.lambda$poll$4(ReactiveKafkaConsumer.java:199)
+	at io.smallrye.context.impl.wrappers.SlowContextualFunction.apply(SlowContextualFunction.java:21)
+	at io.smallrye.mutiny.operators.uni.UniOnItemTransform$UniOnItemTransformProcessor.onItem(UniOnItemTransform.java:36)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onItem(UniOperatorProcessor.java:47)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.forwardTo(UniMemoizeOp.java:123)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.subscribe(UniMemoizeOp.java:67)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:35)
+	at io.smallrye.mutiny.operators.uni.UniRunSubscribeOn.lambda$subscribe$0(UniRunSubscribeOn.java:27)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:14:54,569 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:14:54,570 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:15:02,451 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:15:02,452 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:15:02,452 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:15:04,606 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:282)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:232)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:290)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:264)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.coordinatorUnknownAndUnreadySync(ConsumerCoordinator.java:451)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:483)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.updateAssignmentMetadataIfNeeded(ClassicKafkaConsumer.java:677)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:641)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:622)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:895)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaConsumer.lambda$poll$4(ReactiveKafkaConsumer.java:199)
+	at io.smallrye.context.impl.wrappers.SlowContextualFunction.apply(SlowContextualFunction.java:21)
+	at io.smallrye.mutiny.operators.uni.UniOnItemTransform$UniOnItemTransformProcessor.onItem(UniOnItemTransform.java:36)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onItem(UniOperatorProcessor.java:47)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.forwardTo(UniMemoizeOp.java:123)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.subscribe(UniMemoizeOp.java:67)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:35)
+	at io.smallrye.mutiny.operators.uni.UniRunSubscribeOn.lambda$subscribe$0(UniRunSubscribeOn.java:27)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:15:04,607 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:15:04,608 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:15:12,033 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:15:12,034 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:15:12,034 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:15:14,041 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:282)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:253)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:244)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.awaitMetadataUpdate(ConsumerNetworkClient.java:166)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:303)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureCoordinatorReady(AbstractCoordinator.java:264)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.coordinatorUnknownAndUnreadySync(ConsumerCoordinator.java:451)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:483)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.updateAssignmentMetadataIfNeeded(ClassicKafkaConsumer.java:677)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:641)
+	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:622)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:895)
+	at io.smallrye.reactive.messaging.kafka.impl.ReactiveKafkaConsumer.lambda$poll$4(ReactiveKafkaConsumer.java:199)
+	at io.smallrye.context.impl.wrappers.SlowContextualFunction.apply(SlowContextualFunction.java:21)
+	at io.smallrye.mutiny.operators.uni.UniOnItemTransform$UniOnItemTransformProcessor.onItem(UniOnItemTransform.java:36)
+	at io.smallrye.mutiny.operators.uni.UniOperatorProcessor.onItem(UniOperatorProcessor.java:47)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.forwardTo(UniMemoizeOp.java:123)
+	at io.smallrye.mutiny.operators.uni.UniMemoizeOp.subscribe(UniMemoizeOp.java:67)
+	at io.smallrye.mutiny.operators.AbstractUni.subscribe(AbstractUni.java:35)
+	at io.smallrye.mutiny.operators.uni.UniRunSubscribeOn.lambda$subscribe$0(UniRunSubscribeOn.java:27)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:15:14,043 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:15:14,044 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (smallrye-kafka-consumer-thread-0) [Consumer clientId=kafka-consumer-auth-events-in, groupId=c16babc3-7e1b-4cd9-badc-22d3b71f877b] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 23:15:22,045 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 23:15:22,046 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 23:15:22,047 b32ea141df11 /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events-out) [Producer clientId=kafka-producer-auth-events-out] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected

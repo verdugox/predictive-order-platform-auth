@@ -1,0 +1,15 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /usr/share/filebeat/logs/auth-service.log
+
+output.elasticsearch:
+  hosts: ["http://elasticsearch:9200"]
+  index: "quarkus-logs-%{+yyyy.MM.dd}"
+
+setup.kibana:
+  host: "kibana:5601"
+
+setup.template.name: "quarkus-logs"
+setup.template.pattern: "quarkus-logs-*"

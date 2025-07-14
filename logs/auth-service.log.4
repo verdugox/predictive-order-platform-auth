@@ -1,0 +1,263 @@
+2025-07-14 17:21:32,736 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [io.qua.config] (main) Unrecognized configuration key "quarkus.opentelemetry.tracer.resource-attributes" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-07-14 17:21:32,736 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [io.qua.config] (main) Unrecognized configuration key "quarkus.oidc.token.role-claim-path" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-07-14 17:21:32,737 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [io.qua.config] (main) Unrecognized configuration key "quarkus.opentelemetry.tracer.exporter.otlp.protocol" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-07-14 17:21:32,737 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [io.qua.config] (main) Unrecognized configuration key "quarkus.opentelemetry.tracer.exporter.otlp.endpoint" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-07-14 17:21:32,737 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [io.qua.config] (main) Unrecognized configuration key "quarkus.opentelemetry.enabled" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-07-14 17:21:32,737 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [io.qua.config] (main) Unrecognized configuration key "quarkus.oidc.token.verify-access-token-audience" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2025-07-14 17:21:34,077 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [io.qua.oid.com.run.OidcCommonUtils] (vert.x-eventloop-thread-0) OIDC Server is not available:: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: keycloak/172.19.0.3:8080
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:336)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:339)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:784)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:732)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 17:21:34,098 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [io.qua.oid.run.OidcRecorder] (vert.x-eventloop-thread-0) OIDC server is not available at the 'http://keycloak:8080/realms/AuthService' URL. Please make sure it is correct. Note it has to end with a realm value if you work with Keycloak, for example: 'https://localhost:8180/auth/realms/quarkus'
+2025-07-14 17:21:34,104 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [io.qua.oid.run.OidcRecorder] (vert.x-eventloop-thread-0) Tenant 'Default': 'OIDC Server is not available'. OIDC server is not available yet, an attempt to connect will be made during the first request. Access to resources protected by this tenant may fail if OIDC server will not become available
+2025-07-14 17:21:34,586 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] INFO  [io.sma.rea.mes.kafka] (main) SRMSG18213: Setting bootstrap.servers to localhost:9092
+2025-07-14 17:21:34,590 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [io.sma.rea.mes.kafka] (main) SRMSG18248: Key serializer omitted, using String as default
+2025-07-14 17:21:34,662 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] INFO  [org.apa.kaf.com.con.AbstractConfig] (smallrye-kafka-producer-thread-0) ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = kafka-producer-auth-events
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class io.smallrye.reactive.messaging.kafka.fault.SerializerWrapper
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.rebootstrap.trigger.ms = 300000
+	metadata.recovery.strategy = rebootstrap
+	metric.reporters = [org.apache.kafka.common.metrics.JmxReporter]
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 10000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.smallrye.reactive.messaging.kafka.fault.SerializerWrapper
+
+2025-07-14 17:21:35,126 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] INFO  [io.sma.rea.mes.kafka] (smallrye-kafka-producer-thread-0) SRMSG18258: Kafka producer kafka-producer-auth-events, connected to Kafka brokers 'localhost:9092', is configured to write records to 'auth-events'
+2025-07-14 17:21:35,392 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] INFO  [io.quarkus] (main) auth-service 1.0.0-SNAPSHOT on JVM (powered by Quarkus 3.24.2) started in 6.911s. Listening on: http://0.0.0.0:8083
+2025-07-14 17:21:35,396 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] INFO  [io.quarkus] (main) Profile prod activated. 
+2025-07-14 17:21:35,410 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] INFO  [io.quarkus] (main) Installed features: [agroal, cdi, config-yaml, hibernate-orm, hibernate-orm-panache, kafka-client, messaging, messaging-kafka, mongodb-client, mongodb-panache, narayana-jta, oidc, opentelemetry, redis-client, rest, rest-jackson, security, smallrye-context-propagation, smallrye-jwt, vault, vertx]
+2025-07-14 17:21:35,696 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 17:21:35,699 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 17:21:35,714 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 17:21:35,775 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 17:21:35,777 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 17:21:35,781 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 17:21:35,890 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 17:21:35,892 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 17:21:35,893 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 17:21:36,100 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 17:21:36,109 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 17:21:36,114 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 17:21:36,434 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 17:21:36,436 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 17:21:36,446 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 17:21:37,278 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 17:21:37,280 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 17:21:37,282 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 17:21:39,008 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 17:21:39,012 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 17:21:39,013 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 17:21:42,502 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 17:21:42,504 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 17:21:42,505 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 17:21:49,181 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] DEBUG [org.apa.kaf.com.net.Selector] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Connection with localhost/127.0.0.1 (channelId=-1) disconnected: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.kafka.common.network.PlaintextTransportLayer.finishConnect(PlaintextTransportLayer.java:49)
+	at org.apache.kafka.common.network.KafkaChannel.finishConnect(KafkaChannel.java:224)
+	at org.apache.kafka.common.network.Selector.pollSelectionKeys(Selector.java:531)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:486)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:645)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:349)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:251)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2025-07-14 17:21:49,184 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-07-14 17:21:49,187 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | kafka-producer-auth-events) [Producer clientId=kafka-producer-auth-events] Bootstrap broker localhost:9092 (id: -1 rack: null isFenced: false) disconnected
+2025-07-14 17:21:55,568 68175d4f3aea /usr/lib/jvm/java-17-openjdk-17.0.14.0.7-2.el9.x86_64/bin/java[1] INFO  [io.quarkus] (Shutdown thread) auth-service stopped in 0.300s

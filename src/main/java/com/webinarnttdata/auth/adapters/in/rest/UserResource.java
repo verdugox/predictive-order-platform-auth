@@ -1,5 +1,6 @@
 package com.webinarnttdata.auth.adapters.in.rest;
 
+import com.webinarnttdata.auth.adapters.out.kafka.AuthEventProducer;
 import com.webinarnttdata.auth.application.services.AuthFacade;
 import com.webinarnttdata.auth.application.services.UserService;
 import com.webinarnttdata.auth.domain.User;
@@ -30,6 +31,8 @@ public class UserResource {
     SecurityIdentity identity;
     @Inject
     AuthFacade authFacade;
+    @Inject
+    AuthEventProducer producer;
 
     @POST
     @Path("/register")
@@ -112,6 +115,18 @@ public class UserResource {
     @RolesAllowed("admin")
     public String simulateCircuitBreaker() {
         return authFacade.simulatePredictionWithCircuitBreaker();
+    }
+
+    @GET
+    @Path("/send-event")
+    @RolesAllowed("admin")
+    public String sendEventKafka(@QueryParam("msg")String message) {
+        if (message == null || message.isEmpty()) {
+            return "Mensaje no proporcionado";
+        }
+        producer.sendEvent(message);
+        logger.info(AppLogger.colorSuccess("Evento enviado a Kafka: " + message));
+        return "Evento enviado a  kafka correctamente: " + message;
     }
 
 
