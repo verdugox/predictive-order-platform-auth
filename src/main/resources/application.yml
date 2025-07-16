@@ -5,7 +5,7 @@ mp:
         connector: smallrye-kafka
         topic: auth-events
         value.serializer: io.quarkus.kafka.client.serialization.ObjectMapperSerializer
-        bootstrap.servers: ${QUARKUS_KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+        bootstrap.servers: ${QUARKUS_KAFKA_BOOTSTRAP_SERVERS:kafka:9092}
 
     incoming:
       auth-events-in:
@@ -13,16 +13,14 @@ mp:
         topic: auth-events
         value.deserializer: io.quarkus.kafka.client.serialization.ObjectMapperDeserializer
         auto.offset.reset: earliest
-        bootstrap.servers: ${QUARKUS_KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
-
-
+        bootstrap.servers: ${QUARKUS_KAFKA_BOOTSTRAP_SERVERS:kafka:9092}
 
 quarkus:
   oidc:
-    auth-server-url: ${OIDC_URL:${vault:myapp.auth-server-url}}  # 1. ENV > 2. Vault > 3. (Error si ninguno)
+    auth-server-url: ${OIDC_URL:${vault:myapp.auth-server-url}}
     client-id: "auth-service-client"
     credentials:
-      secret: ${OIDC_SECRET:${vault:myapp.client-secret}}  # ENV > Vault
+      secret: ${OIDC_SECRET:${vault:myapp.client-secret}}
     tls:
       verification: none
     application-type: service
@@ -34,29 +32,51 @@ quarkus:
       verify-access-token-audience: true
 
   mongodb:
-    connection-string: ${QUARKUS_MONGODB_CONNECTION_STRING:"mongodb://localhost:27017"}
+    connection-string: ${QUARKUS_MONGODB_CONNECTION_STRING:mongodb://mongo:27017}
     database: "auth-db"
 
   redis:
-    hosts: "redis://${REDIS_HOST:localhost}:${REDIS_PORT:6379}"
+    hosts: "redis://${REDIS_HOST:redis}:${REDIS_PORT:6379}"
     timeout: "100s"
     client-name: "auth-redis-client"
-
+    client-type: standalone
 
   kafka:
-    bootstrap-servers: ${QUARKUS_KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    bootstrap-servers: ${QUARKUS_KAFKA_BOOTSTRAP_SERVERS:kafka:9092}
 
   opentelemetry:
     enabled: true
     tracer:
       exporter:
         otlp:
-          endpoint: ${OTEL_EXPORTER_OTLP_ENDPOINT:http://localhost:4317}
+          endpoint: ${OTEL_EXPORTER_OTLP_ENDPOINT:http://otel-collector:4317}
           protocol: grpc
       resource-attributes: service.name=auth-service
 
+  micrometer:
+    enabled: true
+    registry-enabled-default: true
+    registry:
+      prometheus:
+        enabled: true
+
+  management:
+    enabled: true
+    root-path: /q        # ✅ asegura que las rutas estén bajo /q
+    endpoints:
+      all:
+        enabled: true
+      prometheus:
+        enabled: true    # ✅ habilita prometheus explícitamente
+        path: /metrics   # ✅ la ruta queda en /q/metrics
+
+  smallrye-metrics:
+    enabled: true        # ✅ habilita smallrye métricas
+    extensions:
+      enabled: true
+
   vault:
-    url: ${QUARKUS_VAULT_URL:http://localhost:8200}
+    url: ${QUARKUS_VAULT_URL:http://vault:8200}
     authentication:
       client-token: root
     kv-secret-engine-mount-path: secret
@@ -75,17 +95,11 @@ quarkus:
       enable: true
       path: "/app/logs/auth-service.log"
     category:
-      "com.webinarnttdata":
-        level: DEBUG
-      "io.quarkus.oidc":
-        level: DEBUG
-      "io.quarkus.security":
-        level: DEBUG
-      "org.apache.kafka":
-        level: DEBUG
-      "io.smallrye.reactive.messaging.kafka":
-        level: DEBUG
-
+      "com.webinarnttdata": { level: DEBUG }
+      "io.quarkus.oidc": { level: DEBUG }
+      "io.quarkus.security": { level: DEBUG }
+      "org.apache.kafka": { level: DEBUG }
+      "io.smallrye.reactive.messaging.kafka": { level: DEBUG }
 
 resilience4j.circuitbreaker:
   instances:

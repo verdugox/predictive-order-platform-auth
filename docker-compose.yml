@@ -2,6 +2,7 @@ version: '3.9'
 
 networks:
   backend-network:
+    driver: bridge
 
 services:
 
@@ -38,20 +39,25 @@ services:
     image: confluentinc/cp-kafka:7.6.0
     container_name: kafka
     ports:
-      - "9092:9092"
+      - "9092:9092"     # Expuesto al host
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      # Permite conexiones desde dentro y fuera del contenedor
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092,DOCKER://kafka:29092
-      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,DOCKER:PLAINTEXT
-      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092,DOCKER://0.0.0.0:29092
-      KAFKA_INTER_BROKER_LISTENER_NAME: DOCKER
+
+      # ✅ Listeners (un puerto interno y uno externo)
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+
+      # Mapea el protocolo de comunicación
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
+
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
     depends_on:
       - zookeeper
     networks:
       - backend-network
+
 
 
   redis:
@@ -77,6 +83,18 @@ services:
     container_name: grafana
     ports:
       - "3000:3000"
+    networks:
+      - backend-network
+
+  otel-collector:
+    image: otel/opentelemetry-collector-contrib
+    container_name: otel-collector
+    command: [ "--config=/etc/otel-collector-config.yaml" ]
+    volumes:
+      - ./otel-collector-config.yaml:/etc/otel-collector-config.yaml
+    ports:
+      - "4317:4317"
+      - "9464:9464" # => expone las métricas para Prometheus
     networks:
       - backend-network
 
@@ -147,13 +165,18 @@ services:
       - ./logs:/app/logs
     environment:
       - OIDC_URL=http://keycloak:8080/realms/AuthService
-      - OIDC_SECRET=u0ImLwTxsxsOE4J3Twl9NexiAkrtXnr2
+      - OIDC_SECRET=qCvlzdDYsczWeLmoGEkEXhus9kmH4lV5
       - QUARKUS_VAULT_URL=http://vault:8200
       - QUARKUS_MONGODB_CONNECTION_STRING=mongodb://mongo:27017
       - QUARKUS_KAFKA_BOOTSTRAP_SERVERS=kafka:9092
       - REDIS_HOST=redis
       - REDIS_PORT=6379
-      - OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4317
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://otel-collector:4317
+      - QUARKUS_HTTP_PORT=8083
+      - QUARKUS_MICROMETER_ENABLED=true
+      - QUARKUS_MICROMETER_REGISTRY_PROMETHEUS_ENABLED=true
+      - QUARKUS_MANAGEMENT_ENABLED=true
+      - QUARKUS_MANAGEMENT_ENDPOINTS_ALL_ENABLED=true
     depends_on:
       keycloak:
         condition: service_healthy
@@ -162,6 +185,8 @@ services:
       redis:
         condition: service_started
       vault:
+        condition: service_started
+      otel-collector:
         condition: service_started
     networks:
       - backend-network

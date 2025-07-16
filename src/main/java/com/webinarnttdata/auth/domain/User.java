@@ -1,5 +1,7 @@
 package com.webinarnttdata.auth.domain;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.quarkus.mongodb.panache.reactive.ReactivePanacheMongoEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -20,5 +22,13 @@ public class User extends ReactivePanacheMongoEntity {
 
     @BsonProperty("role")
     public String role;
+
+    public String toJson() {
+        try {
+            return new ObjectMapper().writeValueAsString(this);
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException("Error serializando User a JSON", e);
+        }
+    }
 
 }

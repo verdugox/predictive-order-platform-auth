@@ -1,12 +1,20 @@
 package com.webinarnttdata.auth.adapters.in.rest;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.webinarnttdata.auth.adapters.out.kafka.AuthEventProducer;
 import com.webinarnttdata.auth.application.services.AuthFacade;
 import com.webinarnttdata.auth.application.services.UserService;
 import com.webinarnttdata.auth.domain.User;
 import com.webinarnttdata.auth.domain.patterns.AppLogger;
+import io.micrometer.core.annotation.Counted;
+import io.micrometer.core.annotation.Timed;
+import io.opentelemetry.api.trace.Span;
+import io.opentelemetry.api.trace.Tracer;
+import io.quarkus.redis.datasource.ReactiveRedisDataSource;
+import io.quarkus.redis.datasource.value.ReactiveValueCommands;
 import io.quarkus.security.identity.SecurityIdentity;
 import io.smallrye.mutiny.Uni;
+import jakarta.annotation.PostConstruct;
 import jakarta.annotation.security.RolesAllowed;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
@@ -14,6 +22,7 @@ import jakarta.ws.rs.core.Context;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import jakarta.ws.rs.core.SecurityContext;
+import org.bson.types.ObjectId;
 import org.jboss.logging.Logger;
 
 @Path("api/users")
@@ -25,6 +34,9 @@ public class UserResource {
     private static final Logger logger = AppLogger.getInstance();
 
     @Inject
+    Tracer tracer;
+
+    @Inject
     UserService userService;
     // Inyectamos SecurityIdentity para ver los roles que Quarkus detecta
     @Inject
@@ -33,9 +45,28 @@ public class UserResource {
     AuthFacade authFacade;
     @Inject
     AuthEventProducer producer;
+    @Inject
+    ReactiveRedisDataSource reactiveRedisDS;
+    ReactiveValueCommands<String, String> redis;
+
+    @PostConstruct
+    void init() {
+        redis = reactiveRedisDS.value(String.class);
+    }
+
+    public void someMethod() {
+        Span span = tracer.spanBuilder("getUserFromDB").startSpan();
+        try {
+            // tu lógica
+        } finally {
+            span.end();
+        }
+    }
 
     @POST
     @Path("/register")
+    @Counted(value = "users.register.count", description = "Número de usuarios registrados")
+    @Timed(value = "users.register.timer", description = "Tiempo en registrar un usuario")
     public Uni<Response> register(User user) {
         logger.info(AppLogger.colorSuccess("Llamando al endpoint /register con usuario: " + user.username));
         return userService.register(user)
@@ -46,6 +77,8 @@ public class UserResource {
 
     @GET
     @Path("/{username}")
+    @Counted(value = "users.find.count", description = "Número de veces que se buscó un usuario")
+    @Timed(value = "users.find.timer", description = "Tiempo en buscar un usuario por username")
     @RolesAllowed("admin") // Solo usuarios con rol 'admin' pueden acceder
     public Uni<Response> getByUsername(@PathParam("username") String username,
                                        @Context SecurityContext ctx) {
@@ -129,6 +162,36 @@ public class UserResource {
         return "Evento enviado a  kafka correctamente: " + message;
     }
 
+    @GET
+    @Path("/redis/{id}")
+    public Uni<Response> getUser(@PathParam("id") String id) {
+        logger.info(AppLogger.colorInfo("Consultando usuario con ID: " + id));
+
+        String cacheKey = "user:" + id;
+
+        // 1. Intentar desde Redis
+        return redis.get(cacheKey)
+                .onItem().ifNotNull().transform(cachedJson -> {
+                    logger.info(AppLogger.colorSuccess("Usuario encontrado en cache Redis"));
+                    return Response.ok(cachedJson).build();
+                })
+                .onItem().ifNull().switchTo(() -> {
+                    // 2. Si no está en cache, buscar en MongoDB
+                    return User.findById(new ObjectId(id))
+                            .onItem().ifNotNull().transformToUni(user -> {
+                                try {
+                                    String jsonUser = new ObjectMapper().writeValueAsString(user);
+                                    logger.info(AppLogger.colorInfo("Usuario encontrado en MongoDB, cacheando en Redis..."));
+                                    return redis.set(cacheKey, jsonUser)
+                                            .replaceWith(Response.ok(jsonUser).build());
+                                } catch (Exception e) {
+                                    logger.error(AppLogger.colorError("Error serializando User"), e);
+                                    return Uni.createFrom().item(Response.ok(user).build());
+                                }
+                            })
+                            .onItem().ifNull().continueWith(Response.status(Response.Status.NOT_FOUND).build());
+                });
+    }
 
 
 }
