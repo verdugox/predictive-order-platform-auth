@@ -17,11 +17,6 @@ services:
     command: start-dev
     networks:
       - backend-network
-    healthcheck:
-      test: [ "CMD", "curl", "-f", "http://localhost:8080/" ]
-      interval: 10s
-      timeout: 5s
-      retries: 10
 
 
   zookeeper:
@@ -153,11 +148,23 @@ services:
     networks:
       - backend-network
 
+  tempo:
+    image: grafana/tempo:2.4.1
+    container_name: tempo
+    ports:
+      - "3200:3200"      # Solo para la UI de Grafana
+    command: [ "-config.file=/etc/tempo.yaml" ]
+    volumes:
+      - ./tempo.yaml:/etc/tempo.yaml
+    networks:
+      - backend-network
+  
+
   auth-service:
     build:
       context: .
       dockerfile: src/main/docker/Dockerfile.jvm
-    image: auth-service
+    image: auth-service-native:1.0.1
     container_name: auth-service
     ports:
       - "8083:8083"
@@ -178,8 +185,6 @@ services:
       - QUARKUS_MANAGEMENT_ENABLED=true
       - QUARKUS_MANAGEMENT_ENDPOINTS_ALL_ENABLED=true
     depends_on:
-      keycloak:
-        condition: service_healthy
       kafka:
         condition: service_started
       redis:

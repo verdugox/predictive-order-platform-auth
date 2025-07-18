@@ -69,6 +69,7 @@ quarkus:
       prometheus:
         enabled: true    # ✅ habilita prometheus explícitamente
         path: /metrics   # ✅ la ruta queda en /q/metrics
+    network-interface: 0.0.0.0 # <-- Esto soluciona el acceso en Docker
 
   smallrye-metrics:
     enabled: true        # ✅ habilita smallrye métricas
